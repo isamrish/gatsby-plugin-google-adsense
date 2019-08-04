@@ -4,7 +4,7 @@
   "description": "Gatsby plugin to add google adsense onto a site",
   "main": "index.js",
   "scripts": {
-    "build": "babel src --out-dir . --ignore **/__tests__",
+    "build": "babel src --out-dir . --ignore test/",
     "prepare": "cross-env NODE_ENV=production npm run build",
     "test": "jest"
   },
