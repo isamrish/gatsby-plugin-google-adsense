@@ -1,5 +1,5 @@
 {
-  "name": "gatsby-plugin-google-adsense",
+  "name": "@isamrish/gatsby-plugin-google-adsense",
   "version": "1.0.0",
   "description": "Gatsby plugin to add google adsense onto a site",
   "main": "index.js",
@@ -19,11 +19,7 @@
     "adsense",
     "google adsense"
   ],
-  "author": {
-    "name": "Amrish Kushwaha",
-    "email": "askmaurya48@gmail.com",
-    "url": "https://uxworks.online"
-  },
+  "author": "Amrish Kushwaha <askmaurya48@gmail.com> (https://uxworks.online)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/IsAmrish/gatsby-plugin-google-adsense/issues"
@@ -44,5 +40,8 @@
     "gatsby": "^2.13.50",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
+  },
+  "directories": {
+    "test": "test"
   }
 }
