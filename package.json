@@ -19,7 +19,11 @@
     "adsense",
     "google adsense"
   ],
-  "author": "Amrish Kushwaha <askmaurya48@gmail.com>",
+  "author": {
+    "name": "Amrish Kushwaha",
+    "email": "askmaurya48@gmail.com",
+    "url": "https://uxworks.online"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/IsAmrish/gatsby-plugin-google-adsense/issues"
