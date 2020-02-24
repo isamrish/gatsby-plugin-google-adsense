@@ -4,7 +4,7 @@ Add Google Adsense to your Gatsby site.
 
 ## Install
 
-`npm install --save gatsby-plugin-google-adsense`
+`npm install --save @isamrish/gatsby-plugin-google-adsense`
 
 ## How to use
 
@@ -13,7 +13,7 @@ Add Google Adsense to your Gatsby site.
 module.exports = {
   plugins: [
     {
-      resolve: `gatsby-plugin-google-adsense`,
+      resolve: `@isamrish/gatsby-plugin-google-adsense`,
       options: {
         googleAdClientId: "YOUR_GOOGLE_ADSENSE_TRACKING_ID",
         head: false // Optional
