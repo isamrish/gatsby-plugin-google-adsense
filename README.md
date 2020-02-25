@@ -1,12 +1,24 @@
-# gatsby-plugin-google-adsense
+<h1 align="center">
+<strong>gatsby-plugin-google-adsense</strong>
+</h1>
 
+<p align="center">
 Add Google Adsense to your Gatsby site.
+</p>
 
 ## Install
 
-`npm install --save @isamrish/gatsby-plugin-google-adsense`
+```
+npm install @isamrish/gatsby-plugin-google-adsense
+```
 
-## How to use
+or
+
+```
+yarn add @isamrish/gatsby-plugin-google-adsense
+```
+
+## Usage in Gatsby website
 
 ```javascript
 // In your gatsby-config.js
@@ -31,4 +43,4 @@ Here you place your Google Adsense tracking id.
 
 ### `head`
 
-Here you can define where to place the tracking script. With `head:true` it will placed in the header, with `head:false` it will placed in the body. Defaults to `false`.
+Here you can define where to place the tracking script. With `head:true` it will placed in the header, with `head:false` it will placed in the body. Default is `false`.
