@@ -6,6 +6,11 @@
 Add Google Adsense to your Gatsby site.
 </p>
 
+<p align="center">
+<img alt="npm (scoped)" src="https://img.shields.io/npm/v/@isamrish/gatsby-plugin-google-adsense">
+<img alt="npm" src="https://img.shields.io/npm/dt/@isamrish/gatsby-plugin-google-adsense">
+</p>
+
 ## Install
 
 ```
