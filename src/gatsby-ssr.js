@@ -1,15 +1,15 @@
 import React from "react";
+import * as logger from "./logger";
 export const onRenderBody = (
-  { reporter, setHeadComponents, setPostBodyComponents },
+  { setHeadComponents, setPostBodyComponents },
   pluginOptions
 ) => {
   if (process.env.NODE_ENV !== `production`) {
-    reporter.warn("non production environment");
+    logger.warningConsoleLogger("non production environment");
     return null;
   }
   if (pluginOptions.googleAdClientId === undefined) {
-    reporter.warn("googleAdClientId is not set");
-    return null;
+    logger.throwErorr("googleAdClientId is not set");
   }
   const setComponents = pluginOptions.head
     ? setHeadComponents
