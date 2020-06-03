@@ -49,3 +49,5 @@ Here you place your Google Adsense tracking id.
 ### `head`
 
 Here you can define where to place the tracking script. With `head:true` it will placed in the header, with `head:false` it will placed in the body. Default is `false`.
+
+Google adsense recommends to put script in [head tag](https://support.google.com/adsense/answer/9274516).

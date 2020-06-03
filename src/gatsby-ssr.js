@@ -16,20 +16,10 @@ export const onRenderBody = (
     : setPostBodyComponents;
   return setComponents([
     <script
-      async
-      type="text/javascript"
-      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
-    />,
-    <script
       key={`gatsby-plugin-google-adsense`}
-      dangerouslySetInnerHTML={{
-        __html: `
-      (adsbygoogle = window.adsbygoogle || []).push({
-          google_ad_client: ${pluginOptions.googleAdClientId},
-          enable_page_level_ads: true
-      });
-      `
-      }}
+      data-ad-client={`${pluginOptions.googleAdClientId}`}
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"
     />
   ]);
 };
