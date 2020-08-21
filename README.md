@@ -51,3 +51,37 @@ Here you place your Google Adsense tracking id.
 Here you can define where to place the tracking script. With `head:true` it will placed in the header, with `head:false` it will placed in the body. Default is `false`.
 
 Google adsense recommends to put script in [head tag](https://support.google.com/adsense/answer/9274516).
+
+## Example of Adsense component
+
+```javascript
+// In your adsense component
+import React from "react";
+
+export default function AdSense() {
+  React.useEffect(() => {
+    if (process.env.NODE_ENV !== "development") {
+      if (window) {
+        try {
+          (window.adsbygoogle = window.adsbygoogle || []).push({});
+        } catch (error) {
+          console.log(error, "adsenese error");
+        }
+      }
+    }
+  }, []);
+
+  return (
+    <ins
+      className="adsbygoogle"
+      data-ad-client="ca-pub-XXXXXX"
+      data-ad-slot="XXXXXXX"
+      style={{
+        display: "block"
+      }}
+      data-ad-format="auto"
+      data-full-width-responsive="true"
+    ></ins>
+  );
+}
+```
